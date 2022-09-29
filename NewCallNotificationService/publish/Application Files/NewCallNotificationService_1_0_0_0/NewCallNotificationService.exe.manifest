@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="NewCallNotificationService.exe" version="1.0.0.0" publicKeyToken="4722bac101ec69d3" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="NewCallNotificationService" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="NewCallNotificationService.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="NewCallNotificationService.exe" size="76200">
+      <assemblyIdentity name="NewCallNotificationService" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>tNa0PM2WYwnas5ZUI5eES0iluPEsomOfO1cnE4HC/h8=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Newtonsoft.Json.dll" size="700336">
+      <assemblyIdentity name="Newtonsoft.Json" version="12.0.0.0" publicKeyToken="30AD4FE6B2A6AEED" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>f5ErKKB8Im4L46z7L1fwUFOKugEA+h8L8sOfGh8dqBQ=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="System.Text.Encodings.Web.dll" size="61064">
+      <assemblyIdentity name="System.Text.Encodings.Web" version="4.0.3.0" publicKeyToken="CC7B13FFCD2DDD51" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>jeTjNtgh/20GRwSUUGniEBQ1xo2D5cTZe3u0PnWtNfw=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Topshelf.dll" size="188928">
+      <assemblyIdentity name="Topshelf" version="4.2.1.215" publicKeyToken="B800C4CFCDEEA87B" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>YXyS8vmIaqbjeM7wqvzWb1O+N1DsLtg4je7FVzcpJDo=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="NewCallNotificationService.exe.config" size="580">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>rhVa1LRqaPNR8ww4pB5RMnym5X5JWpHzwM+epIZUNPw=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=SNG\wjakimcz" issuerKeyHash="862ea96546e865347479691addb8c6a1f2a78da1" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>jvGrB37xzyheJhsCIQr5/MCPplDoT4BuU1qUrUDA2VY=</DigestValue></Reference></SignedInfo><SignatureValue>eURDO2RioYEA5vUmGB2rGB3tPNwbtn/0nd/ZSWeHf9g0fdXMPpqTYoPdxoVx82hE/9o+m0Zcz2xkb3bQuhm4E0YCrrfuwDn+ehBsk64pA6RknYkL1nfSRNCKU/2MEfr7izdwWmWTVnTwAGHTNJOtZaGMhyUKQCDdA5t4Slf41nQ=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>p1hTlpXHwS2GN3cdHJKzkVvDeQTtWm5coaUc52fHdY0en6hagIInCE2kYsFH2Oh1SqTvSbvkuSF+8PSjc5wsvOlIAVtFWxe+zE1E/tgQawEm7MZrPcQMtUkpV/O0V2JyUr41VBjKiLmYG6oaQC9NMIZ8pbZrSAyuWKq77x8J8Q0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="56d9c040ad945a536e804fe850a68fc0fcf90a21021b265e28cff17e07abf18e" Description="" Url=""><as:assemblyIdentity name="NewCallNotificationService.exe" version="1.0.0.0" publicKeyToken="4722bac101ec69d3" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=SNG\wjakimcz</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>bE+tHoh2sDTh4ta8fQJePRDUvg5Lq+1E0WZdotRYLmY=</DigestValue></Reference></SignedInfo><SignatureValue>W9jZiO09+FjIxGFqA4nWWUuhhzceLEMKM/QVXysTU/CcosqO8QTtofNYr2CFuG0O8i2GFOtpcKjXovwj1OrtnydpFhNcRj5RzvWcXDCmf7aDV4VpbSvGPV0vA3694O29Z/oIb6/ht4pl6DlNH0o1Zi1SxKwoCZfF+RV4WW9Vy5Q=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>p1hTlpXHwS2GN3cdHJKzkVvDeQTtWm5coaUc52fHdY0en6hagIInCE2kYsFH2Oh1SqTvSbvkuSF+8PSjc5wsvOlIAVtFWxe+zE1E/tgQawEm7MZrPcQMtUkpV/O0V2JyUr41VBjKiLmYG6oaQC9NMIZ8pbZrSAyuWKq77x8J8Q0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIByTCCATKgAwIBAgIQfMXLrgsTPYVEhUvB5bJOwTANBgkqhkiG9w0BAQsFADAjMSEwHwYDVQQDHhgAUwBOAEcAXAB3AGoAYQBrAGkAbQBjAHowHhcNMjIwODI2MDgzOTIwWhcNMjMwODI2MTQzOTIwWjAjMSEwHwYDVQQDHhgAUwBOAEcAXAB3AGoAYQBrAGkAbQBjAHowgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAKdYU5aVx8Ethjd3HRySs5Fbw3kE7VpuXKGlHOdnx3WNHp+oWoCCJwhNpGLBR9jodUqk70m75LkhfvD0o3OcLLzpSAFbRVsXvsxNRP7YEGsBJuzGaz3EDLVJKVfztFdiclK+NVQYyoi5mBuqGkAvTTCGfKW2a0gMrliqu+8fCfENAgMBAAEwDQYJKoZIhvcNAQELBQADgYEAEjLFU2v3rHmUlofellTrNg7DdjEagmqlT7d5fdgsvToGdgpeI8T61HrvfoVxWkMQDPNpTToHmdB3SjAy2xriGnMYXXFwZighuSUP3WgE3TErxdcF550IJ3/b566hFhDoSe8CcfLB/ePjUZY6YeVBzyHfOh75S7E4mKYQD8LrvKk=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
